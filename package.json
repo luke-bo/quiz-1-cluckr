@@ -1,0 +1,27 @@
+{
+  "name": "quiz_1",
+  "version": "1.0.0",
+  "description": "luke bohonis codecore quiz 1 - clucker express app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "clucker",
+    "quiz"
+  ],
+  "author": "Luke B",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "knex": "^0.19.5",
+    "morgan": "^1.9.1",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
