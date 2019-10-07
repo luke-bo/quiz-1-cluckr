@@ -27,6 +27,27 @@ app.get('/', (req,res) => {
 });
 
 
+
+
+
+// sign in page
+
+const timeOut = 1000 * 60 * 60 * 24 * 7;
+
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
+app.post('/login', (req, res) => {
+  const username = req.body.username;
+  res.cookie("username", username, { maxAge: timeOut });
+  // res.send(username); 
+  res.render('welcome', {username: username});
+});
+
+
+
+
 // app.use("/clucks", clucksRouter);
 // app.use("/", rootRouter);
 
