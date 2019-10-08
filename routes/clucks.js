@@ -19,7 +19,7 @@ router.get("/new", (req, res) => {
   res.render("clucks/new");
 });
 
-router.post("/new", (req, res) => {
+router.post("/", (req, res) => {
     const imageUrl = req.body.imageurl;
     const content = req.body.content;
     const username = req.cookies.username;

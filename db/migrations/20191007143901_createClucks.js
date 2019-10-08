@@ -3,7 +3,7 @@ exports.up = function(knex) {
     return knex.schema.createTable("clucks", (t) => {
       t.bigIncrements("id");
       t.string("username");
-      t.string("image_url");
+      t.text("image_url");
       t.text("content");
       t.timestamp("created_at").defaultTo(knex.fn.now());
       t.timestamp("updated_at").defaultTo(knex.fn.now());
