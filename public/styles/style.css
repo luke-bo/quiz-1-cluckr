@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Hepta+Slab&display=swap');
+@import url('reset.css');
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* body {
+    /* background-color: dodgerblue; */
+    /* margin: 5em; */
+    /* padding: 2em; */
+/* } */
+
+h1 {
+    font-size: 3.052em;
+    font-family: 'Hepta Slab', serif;
+    font-weight: bolder;
+  }
+  
+  h2 {
+    font-size: 2.441em;
+  }
+  
+  h3 {
+    font-size: 1.953em;
+  }
+  
+  h4 {
+    font-size: 1.563em;
+    
+  }
+  
+  h5 {
+    font-size: 1.25em;
+  }
+  
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: .5em;
+  }
+  
+  p {
+      line-height: 1.2;
+      margin-bottom: 1em;
+  }
+
+
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    align-items: center;
+    justify-content: end;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    /* vertical centering */
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    /* max-height: 100%; */
+    
+    /* align-content: flex-end; */
+    /* background: green; */
+}
+
+.branding {
+    padding: 1em;
+}
+
+.menu-item {
+    padding: 1em;
+}
+.nav-button {
+    padding: 1em 0em;
+    width: 200px; 
+    height: auto;
+    /* height: 100%; */
+    background-color: lightgray;
+    /* margin-left: 3em; */
+}
+
+.form-wrapper {
+    margin: 1em;
+    padding: 1em;
+    background: white;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: thin;
+    border-radius: .25em;
+    width: 100%;
+    /* margin: 4em; */
+    /* height: 50em; */
+}
+
+.login-form {
+    padding: .5em .5em;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: thin;
+    border-radius: .25em;
+    margin-top: 1em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-item {
+    margin: 1em 1em;
+    padding: .5em .5em;
+}
+
+.login-form-button {
+    width: 40%;
+    margin-left: 60%
+}
+
+
+
+
+/* Clucks styling */
+
+.new-cluck-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: thin;
+    border-radius: .25em;
+    margin-top: 1em;
+    height: auto;
+
+}
+
+.new-cluck-button {
+    width: 40%;
+    margin-left: 60%;
+    padding: 3em 0em;
+    
+}
+
+.new-cluck-form-elements {
+    /* padding: 1em 0em; */
+    margin-bottom: 1em;
+}
+
+
+.cluck-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.cluck-body {
+    display: flex;
+    flex-direction: column;
+}

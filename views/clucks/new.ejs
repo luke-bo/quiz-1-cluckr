@@ -1,0 +1,22 @@
+<%- include("../partials/header") %>
+
+<form class="new-cluck-form" action="/clucks" method="POST">
+    <label for="content">Content</label>
+    <textarea class="new-cluck-form-elements" 
+      cols="50"
+      rows="10"
+      name="content"
+      placeholder="Whatchoo Cluckin' About?">
+    </textarea>
+    <label for="imageurl">Image URL</label>
+    <input class="new-cluck-form-elements" type="text" name="imageurl" placeholder="https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Futurama-Hypnotoad.jpg?q=50&fit=crop&w=798&h=407">
+    <input class="new-cluck-button" type="submit" value="Create Cluck">
+</form>
+
+
+    
+    
+    
+    
+
+<%- include("../partials/footer") %>
