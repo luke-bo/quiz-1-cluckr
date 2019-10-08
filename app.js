@@ -8,7 +8,7 @@ const path = require("path");
 const app = express();
 
 
-// const clucksRouter = require("./routes/clucks");
+const clucksRouter = require("./routes/clucks");
 // const rootRouter = require("./routes/root");
 
 // setup view engine
@@ -23,7 +23,13 @@ app.use(express.static("public"));
 
 // root route test
 app.get('/', (req,res) => {
-    res.render('welcome');
+    const username = req.cookies.username; 
+    res.render('welcome', {username: username});
+    // if (!username) {
+    //   res.render('shit');
+    // } else {
+    //   res.render('welcome', {username: username});
+    // }
 });
 
 
@@ -48,7 +54,7 @@ app.post('/login', (req, res) => {
 
 
 
-// app.use("/clucks", clucksRouter);
+app.use("/clucks", clucksRouter);
 // app.use("/", rootRouter);
 
 

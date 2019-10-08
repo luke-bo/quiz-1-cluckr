@@ -13,11 +13,11 @@ html {
 }
 
 
-body {
+/* body {
     /* background-color: dodgerblue; */
-    margin: 5em;
-    padding: 2em;
-}
+    /* margin: 5em; */
+    /* padding: 2em; */
+/* } */
 
 h1 {
     font-size: 3.052em;
@@ -65,13 +65,11 @@ h1 {
     background: white;
     align-items: center;
     justify-content: end;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
     /* vertical centering */
 }
 
-/* .nav {
-    background: red;
-    width: 80%;
-} */
 
 .nav {
     display: flex;
@@ -82,6 +80,10 @@ h1 {
     
     /* align-content: flex-end; */
     /* background: green; */
+}
+
+.branding {
+    padding: 1em;
 }
 
 .menu-item {
@@ -130,3 +132,35 @@ h1 {
     width: 40%;
     margin-left: 60%
 }
+
+
+
+
+/* Clucks styling */
+
+.new-cluck-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: thin;
+    border-radius: .25em;
+    margin-top: 1em;
+    height: auto;
+
+}
+
+.new-cluck-button {
+    width: 40%;
+    margin-left: 60%;
+    padding: 3em 0em;
+    
+}
+
+.new-cluck-form-elements {
+    /* padding: 1em 0em; */
+    margin-bottom: 1em;
+}
+

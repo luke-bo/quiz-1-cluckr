@@ -1,0 +1,11 @@
+<%- include("../partials/header") %>
+
+<h1>Clucks Index</h1>
+
+<!-- <%= clucks[0].content %> -->
+<% for (cluck of clucks) { %>
+    <div><%=cluck.content%></div>
+<% } %>
+
+
+<%- include("../partials/footer") %>
