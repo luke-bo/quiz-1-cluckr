@@ -14,11 +14,12 @@
         <header class="header">
             <div class="branding"><img src="/assets/cluckr-logo" class="logo" width="80px" height="80px"></div>
             <nav class="nav">
-              
-                <div class="menu-item"> <input class="nav-button" type="button" name="cluck-button" value="Cluck!"></input> </div>
-                
-                <div class="menu-item"> <input class="nav-button" type="button" name="login-button" value="Log In"></input> </div>
-
+              <form action="/clucks/new">
+                <div class="menu-item"> <input class="nav-button" type="submit" name="cluck-button" value="Cluck!"></input> </div>
+              </form>
+              <form action="/login">
+                <div class="menu-item"> <input class="nav-button" type="submit" name="login-button" value="Log In"></input> </div>
+              </form>
             
             </nav>
           </header>

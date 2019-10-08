@@ -164,3 +164,14 @@ h1 {
     margin-bottom: 1em;
 }
 
+
+.cluck-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.cluck-body {
+    display: flex;
+    flex-direction: column;
+}

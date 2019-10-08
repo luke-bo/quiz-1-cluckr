@@ -1,10 +1,23 @@
 <%- include("../partials/header") %>
 
 <h1>Clucks Index</h1>
-
-<!-- <%= clucks[0].content %> -->
+<% let imgUrl = ''; %>
 <% for (cluck of clucks) { %>
-    <div><%=cluck.content%></div>
+    <div class="cluck-wrapper">
+            <img class="profile-photo" src="/assets/hypnotoad-profile.png" alt="futurama toad">
+            <div class="cluck-body">
+                <div><%=cluck.username + ` • ` + cluck.created_at%></div>
+                <div><%=cluck.content%></div>
+                <div>
+                    <% if(!cluck.image_url) { %>
+                        <img src="assets/placeholder-image.png" alt="placeholder image">
+                    <% } else { %>
+                        
+                        <img src="<%= cluck.image_url %>" alt="Image Not Found">
+                    <% } %>
+                </div>
+            </div>
+        </div>
 <% } %>
 
 

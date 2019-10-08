@@ -24,12 +24,7 @@ app.use(express.static("public"));
 // root route test
 app.get('/', (req,res) => {
     const username = req.cookies.username; 
-    res.render('welcome', {username: username});
-    // if (!username) {
-    //   res.render('shit');
-    // } else {
-    //   res.render('welcome', {username: username});
-    // }
+    res.redirect('clucks');
 });
 
 
@@ -48,7 +43,7 @@ app.post('/login', (req, res) => {
   const username = req.body.username;
   res.cookie("username", username, { maxAge: timeOut });
   // res.send(username); 
-  res.render('welcome', {username: username});
+  res.redirect('clucks');
 });
 
 

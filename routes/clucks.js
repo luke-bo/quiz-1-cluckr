@@ -37,13 +37,12 @@ router.post("/new", (req, res) => {
         //   res.send(username + content + imageUrl);
         //   .returning("*")
         //   .then(data => {
-            .then(res.render('/'));
+            .then(res.redirect('/clucks'));
         //   });
     }
   });
 
   router.get("/", (req, res) => {
-    let x = {'a': 'hello'};
     knex
       .select("*")
       .from("clucks")
